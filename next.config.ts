@@ -10,6 +10,11 @@ const securityHeaders = [
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  // Keystatic content is read from disk at request time; make sure the files
+  // ship with every serverless function (Vercel only bundles traced files).
+  outputFileTracingIncludes: {
+    "/**": ["./content/**/*"],
+  },
   images: {
     formats: ["image/avif", "image/webp"],
     remotePatterns: [

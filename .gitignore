@@ -31,3 +31,6 @@ yarn-debug.log*
 *.tsbuildinfo
 .vercel
 coverage
+
+# Production env values for pasting into Vercel (contains secrets)
+.env.vercel
