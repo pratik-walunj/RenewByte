@@ -1,0 +1,96 @@
+hero:
+  eyebrow: Certified refurbished · Warranty backed
+  headline: |-
+    Certified Refurbished Laptops.
+    Better Value. Smarter Choice.
+  subheadline: >-
+    Professionally tested laptops from trusted brands, backed by warranty and
+    quality checks.
+  primaryCta:
+    label: Shop Laptops
+    href: /laptops
+  secondaryCta:
+    label: View Deals
+    href: /deals
+  imageAlt: A refurbished laptop open on a clean desk surface
+  checklistTitle: Every laptop, before it ships
+  checklist:
+    - Full hardware diagnostics
+    - Certified data erasure
+    - Battery health measured & disclosed
+    - Cleaned, graded and photographed
+trustFeatures:
+  - icon: clipboard-check
+    title: Quality tested
+    description: Multi-stage hardware and software checks
+  - icon: shield-check
+    title: Warranty included
+    description: Clear warranty on every eligible device
+  - icon: lock
+    title: Secure payments
+    description: UPI, cards and net banking via Razorpay
+  - icon: truck
+    title: Fast shipping
+    description: Insured delivery across India
+  - icon: rotate-ccw
+    title: Easy returns
+    description: Simple, documented return process
+sections:
+  brands:
+    title: Shop by brand
+    subtitle: Business-grade machines from the makers you already trust.
+  categories:
+    title: Shop by use
+    subtitle: Find the right laptop for how you work, study or play.
+  bestSellers:
+    title: Best sellers
+    subtitle: The laptops our customers choose most often.
+  deals:
+    title: Weekend laptop deals
+    subtitle: Limited units at our lowest prices. Same testing, same warranty.
+    ctaLabel: Shop all deals
+  featured:
+    title: Featured laptops
+    subtitle: Hand-picked configurations with the best value for money.
+  reviews:
+    title: What customers say
+    subtitle: Feedback from people who bought refurbished with us.
+  blog:
+    title: Buying guides
+    subtitle: Straightforward advice to help you choose well.
+  faq:
+    title: Frequently asked questions
+    subtitle: Everything you need to know before buying refurbished.
+  process:
+    title: How we refurbish
+    subtitle: A documented process, from intake to your doorstep.
+whyRefurbished:
+  title: Why buy refurbished?
+  subtitle: >-
+    A well-refurbished business laptop often outlasts a new budget machine —
+    at a fraction of the price.
+  points:
+    - icon: wallet
+      title: Better hardware for your budget
+      description: >-
+        Premium business and creator laptops at prices usually reserved for
+        entry-level models.
+    - icon: gauge
+      title: Built to last
+      description: >-
+        Business lines like Latitude, ThinkPad and EliteBook are designed for
+        years of daily use, with sturdier chassis and keyboards.
+    - icon: badge-check
+      title: Transparent condition
+      description: >-
+        Every listing states its cosmetic grade and measured battery health —
+        no guesswork.
+    - icon: leaf
+      title: Less e-waste
+      description: >-
+        Extending a laptop's life avoids the resources and emissions of
+        manufacturing a new one.
+newsletter:
+  title: Get new arrivals and deals first
+  subtitle: One email a week at most. Stock moves fast — be the first to know.
+  disclaimer: Unsubscribe anytime. We never share your email.

@@ -1,0 +1,75 @@
+title: How we refurbish every laptop
+intro: >-
+  Refurbished should mean more than "used". Every laptop we sell goes through
+  the same documented nine-step process before it is listed — and we tell you
+  exactly what we found.
+steps:
+  - icon: scan-search
+    title: Device inspection
+    description: >-
+      We log the serial number and configuration, and check the body, screen,
+      hinges and ports for physical damage.
+  - icon: cpu
+    title: Hardware testing
+    description: >-
+      Diagnostics exercise the processor, memory, storage, display, keyboard,
+      trackpad, audio, webcam, Wi-Fi, Bluetooth and every port.
+  - icon: eraser
+    title: Data erasure
+    description: >-
+      Storage is securely wiped so no previous owner's data remains, and a
+      clean, genuine operating system is installed.
+  - icon: sparkles
+    title: Cleaning
+    description: >-
+      The chassis, keyboard and screen are cleaned and sanitised; vents and
+      fans are cleared of dust.
+  - icon: wrench
+    title: Repair & replacement
+    description: >-
+      Faulty or worn parts — keyboards, batteries, chargers, screens — are
+      repaired or replaced where needed.
+  - icon: gauge
+    title: Quality testing
+    description: >-
+      After repairs, the laptop is stress-tested and battery health is measured
+      and recorded for the listing.
+  - icon: badge-check
+    title: Final inspection
+    description: >-
+      A second technician checks the work and assigns the cosmetic grade
+      (A+, A, B or C) against our published standards.
+  - icon: package
+    title: Packaging
+    description: >-
+      Packed with protective padding and a compatible charger, plus anything
+      else listed under "What's included".
+  - icon: truck
+    title: Shipping
+    description: >-
+      Dispatched with an insured courier and a tracking number so you can
+      follow it to your door.
+commitments:
+  - icon: clipboard-check
+    title: 100% tested devices
+    description: No laptop is listed until it passes every diagnostic step.
+  - icon: shield-check
+    title: Warranty included
+    description: Every eligible device ships with the warranty stated on its page.
+  - icon: lock
+    title: Secure payments
+    description: Payments are processed by Razorpay and verified on our servers.
+  - icon: badge-check
+    title: Quality checked
+    description: A second technician signs off on every refurbished unit.
+  - icon: truck
+    title: Fast delivery
+    description: Most orders are dispatched within 1–2 business days.
+  - icon: headset
+    title: Customer support
+    description: Real people on phone, WhatsApp and email.
+seo:
+  title: How We Refurbish Laptops — Our 9-Step Process
+  description: >-
+    See the nine-step process every RenewByte laptop goes through — inspection,
+    diagnostics, data erasure, repair, quality testing and final grading.

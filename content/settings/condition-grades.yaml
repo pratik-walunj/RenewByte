@@ -1,0 +1,62 @@
+intro: >-
+  Every laptop is inspected and graded by hand before it is listed. The grade
+  describes cosmetic condition only — every grade passes the same hardware and
+  performance tests.
+grades:
+  - grade: A_PLUS
+    name: Excellent
+    summary: Looks close to new. Hard to find any marks.
+    cosmetic: >-
+      No visible scratches or dents at arm's length. At most, extremely faint
+      micro-marks visible only under direct light.
+    performance: >-
+      Passes full diagnostics: processor, memory, storage, display, keyboard,
+      trackpad, ports, speakers, webcam, Wi-Fi and Bluetooth.
+    battery: >-
+      Battery health is measured and shown on the listing. A+ units typically
+      have the highest measured battery health in our inventory.
+    warranty: >-
+      Covered by the warranty period stated on the product page.
+    idealFor: Gifting, or anyone who wants a near-new feel.
+  - grade: A
+    name: Very good
+    summary: Light signs of use, invisible from normal viewing distance.
+    cosmetic: >-
+      Light surface scratches or scuffs on the lid or base. The screen has no
+      scratches that are visible when switched on.
+    performance: >-
+      Passes the same full diagnostics as A+. Performance is not affected by
+      cosmetic grade.
+    battery: >-
+      Battery health is measured and shown on the listing so you know exactly
+      what to expect.
+    warranty: >-
+      Covered by the warranty period stated on the product page.
+    idealFor: Work and study — the best balance of looks and value.
+  - grade: B
+    name: Good
+    summary: Visible wear, fully functional.
+    cosmetic: >-
+      Noticeable scratches, scuffs or small dents on the body, and possible
+      keyboard shine. Screen may show minor marks when switched off.
+    performance: >-
+      Passes the same full diagnostics as every other grade.
+    battery: >-
+      Battery health is measured and shown on the listing.
+    warranty: >-
+      Covered by the warranty period stated on the product page.
+    idealFor: Everyday use where price matters more than looks.
+  - grade: C
+    name: Fair
+    summary: Heavy cosmetic wear, lowest price.
+    cosmetic: >-
+      Heavy scratches, dents, discolouration or small cracks on the body that
+      do not affect use. Any screen blemishes are described on the listing.
+    performance: >-
+      Passes full diagnostics. All ports, keys and components work as expected.
+    battery: >-
+      Battery health is measured and shown on the listing. May be lower than
+      other grades.
+    warranty: >-
+      Covered by the warranty period stated on the product page.
+    idealFor: Students, home offices and secondary machines on a tight budget.

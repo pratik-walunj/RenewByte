@@ -1,0 +1,66 @@
+about: >-
+  RenewByte sells professionally refurbished laptops with transparent condition
+  grading, honest battery reporting and warranty on every eligible device.
+columns:
+  - title: Shop
+    links:
+      - label: All laptops
+        href: /laptops
+      - label: Dell
+        href: /brand/dell
+      - label: HP
+        href: /brand/hp
+      - label: Lenovo
+        href: /brand/lenovo
+      - label: Apple
+        href: /brand/apple
+      - label: Gaming
+        href: /category/gaming-laptops
+      - label: Business
+        href: /category/business-laptops
+      - label: Deals
+        href: /deals
+  - title: Support
+    links:
+      - label: Contact
+        href: /contact
+      - label: Warranty
+        href: /warranty
+      - label: Returns
+        href: /returns
+      - label: Shipping
+        href: /shipping
+      - label: Track order
+        href: /track-order
+      - label: FAQs
+        href: /faq
+  - title: Company
+    links:
+      - label: About
+        href: /about
+      - label: How we refurbish
+        href: /how-we-refurbish
+      - label: Careers
+        href: /careers
+      - label: Blog
+        href: /blog
+      - label: Privacy
+        href: /privacy-policy
+      - label: Terms
+        href: /terms
+  - title: Resources
+    links:
+      - label: Condition grades
+        href: /condition-grades
+      - label: Compare laptops
+        href: /compare
+      - label: Sell / Trade-in
+        href: /sell
+      - label: Under ₹30,000
+        href: /laptops/under-30000
+      - label: Buying guides
+        href: /blog
+paymentNote: Secure payments via UPI, cards, net banking and wallets
+bottomNote: >-
+  Brand names and trademarks belong to their respective owners. RenewByte is an
+  independent refurbisher and is not affiliated with any laptop manufacturer.

@@ -1,0 +1,6 @@
+question: "Do your laptops come with a warranty?"
+answer: "Yes. Every eligible laptop includes a warranty against hardware defects, starting from the date of delivery. The warranty period is shown on each product page and on your invoice. It covers faults such as the motherboard, storage, display, keyboard and ports during normal use."
+category: warranty
+showOnHome: false
+showOnProduct: true
+sortOrder: 1

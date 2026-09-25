@@ -1,0 +1,6 @@
+question: "Will I get an invoice for my order?"
+answer: "Yes. Every order comes with an invoice showing the product, price and applicable taxes. It's emailed to you and included with your order. If you need your business details on the invoice, contact us before your order is dispatched."
+category: orders
+showOnHome: false
+showOnProduct: false
+sortOrder: 3

@@ -1,0 +1,36 @@
+businessName: RenewByte
+legalName: RenewByte Technologies
+tagline: Certified refurbished laptops, tested and warranty-backed
+phone: +91 90000 00000
+whatsappNumber: '919000000000'
+whatsappMessage: Hi, I have a question about a refurbished laptop.
+email: support@renewbyte.example
+gstin: ''
+address:
+  line1: ''
+  line2: ''
+  city: Bengaluru
+  state: Karnataka
+  pincode: ''
+businessHours:
+  - days: Monday – Saturday
+    hours: 10:00 AM – 7:00 PM
+  - days: Sunday
+    hours: Closed
+social:
+  instagram: https://instagram.com/
+  facebook: https://facebook.com/
+  youtube: https://youtube.com/
+  linkedin: https://linkedin.com/
+analytics:
+  gaId: ''
+  gtmId: ''
+  metaPixelId: ''
+seo:
+  defaultTitle: RenewByte — Certified Refurbished Laptops in India
+  titleSuffix: ' | RenewByte'
+  defaultDescription: >-
+    Buy professionally tested refurbished laptops from Dell, HP, Lenovo, Apple
+    and more. Transparent condition grades, warranty included and secure
+    payments.
+  twitterHandle: ''

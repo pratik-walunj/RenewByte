@@ -1,0 +1,21 @@
+# Local development database. Start with: npm run db:up
+services:
+  db:
+    image: postgres:17-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: renewbyte
+      POSTGRES_PASSWORD: renewbyte
+      POSTGRES_DB: renewbyte
+    ports:
+      - "5440:5432"
+    volumes:
+      - renewbyte-db:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U renewbyte"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  renewbyte-db:

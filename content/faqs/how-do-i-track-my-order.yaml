@@ -1,0 +1,6 @@
+question: "How do I track my order?"
+answer: "When your order ships, we email you the courier name and tracking number. You can also check its status any time on our Track order page using your order number, or from your account."
+category: shipping
+showOnHome: false
+showOnProduct: false
+sortOrder: 2

@@ -1,0 +1,6 @@
+question: "How do you test and refurbish each laptop?"
+answer: "Every laptop goes through a documented nine-step process: inspection, full hardware diagnostics, secure data erasure, cleaning, repair or part replacement, stress and quality testing (including battery health measurement), a final inspection by a second technician, careful packaging and insured shipping. You can see each step on our How we refurbish page."
+category: quality
+showOnHome: true
+showOnProduct: true
+sortOrder: 1

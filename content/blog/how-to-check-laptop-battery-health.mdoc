@@ -1,0 +1,107 @@
+---
+title: "How to Check a Laptop's Battery Health (Windows and macOS)"
+excerpt: >-
+  Battery health is the one thing you can't judge from photos. Here's how to
+  check it yourself on Windows with a built-in battery report, and on a
+  MacBook with System Information — and how to read the numbers.
+category: maintenance
+coverImage: /images/blog/how-to-check-laptop-battery-health/cover.webp
+coverAlt: A laptop showing a battery status screen next to its charger
+author: RenewByte Team
+publishedAt: 2026-08-12
+updatedAt: 2026-09-10
+readingMinutes: 6
+seo:
+  title: How to Check Laptop Battery Health on Windows & Mac
+  description: >-
+    Step-by-step: check laptop battery health on Windows with powercfg
+    /batteryreport and on a MacBook with System Information — cycle count,
+    capacity and condition explained.
+---
+A laptop battery wears out gradually. Every charge cycle reduces the amount of energy it can hold, so a two-year-old battery that once lasted eight hours might now last five. When you're buying a refurbished or second-hand laptop — or just wondering why your own laptop dies sooner than it used to — checking battery health takes a few minutes and needs no extra software.
+
+## The two numbers that matter
+
+Whatever operating system you use, battery health comes down to two figures:
+
+- **Design capacity** — how much energy the battery could hold when it was new, measured in milliwatt-hours (mWh) or milliamp-hours (mAh).
+- **Full charge capacity** — how much it can hold today.
+
+Divide the second by the first and multiply by 100 and you get battery health as a percentage:
+
+> Battery health (%) = Full charge capacity ÷ Design capacity × 100
+
+For example, a battery designed for 50,000 mWh that now charges to 42,000 mWh is at 84% health.
+
+A third number, **cycle count**, tells you how many full charge cycles the battery has been through. Two half-charges count as roughly one cycle.
+
+## On Windows: generate a battery report
+
+Windows includes a built-in tool that produces a detailed battery report.
+
+1. Press the **Start** button, type **cmd**, then right-click **Command Prompt** and choose **Run as administrator**. (PowerShell or Windows Terminal work too.)
+2. Type the following command and press **Enter**:
+
+   `powercfg /batteryreport`
+
+3. Windows prints the location of the saved file — usually something like `C:\Windows\system32\battery-report.html` or your user folder. To choose the location yourself, run:
+
+   `powercfg /batteryreport /output "C:\battery-report.html"`
+
+4. Open that HTML file in any browser.
+
+### Reading the Windows report
+
+Scroll to the **Installed batteries** section. You'll see:
+
+- **DESIGN CAPACITY** — the original capacity.
+- **FULL CHARGE CAPACITY** — the current maximum.
+- **CYCLE COUNT** — shown on most laptops, although some models report it as blank.
+
+Further down, **Battery capacity history** shows how full-charge capacity has changed over time, and **Battery life estimates** shows how long the battery has actually lasted based on recent usage — often the most practical number of all.
+
+Some manufacturers also include their own tools: Lenovo Vantage, Dell's power management apps and HP's support utilities show battery health and let you run a battery test.
+
+## On a MacBook: System Information
+
+macOS shows battery details in two places.
+
+### Quick check
+
+Open **System Settings → Battery**. Next to **Battery Health**, click the **ⓘ** button. You'll see a condition (such as **Normal**) and, on recent macOS versions, a **Maximum Capacity** percentage.
+
+### Detailed check (with cycle count)
+
+1. Hold the **Option** key and click the **Apple menu**, then choose **System Information**. (Or open **System Settings → General → About** and click **System Report**.)
+2. In the sidebar, under **Hardware**, select **Power**.
+3. Under **Health Information**, note the **Cycle Count**, **Condition** and, on newer macOS versions, **Maximum Capacity**.
+
+Apple publishes the rated maximum cycle count for each MacBook model on its support website — for most recent models it is 1,000 cycles. The **Condition** field will read **Service Recommended** if macOS detects the battery is significantly degraded.
+
+## How to interpret the results
+
+There isn't a single cut-off, but these rough guidelines help:
+
+| Battery health | What it usually means |
+| --- | --- |
+| 90% and above | Close to new — you'll barely notice any difference |
+| 80–89% | Normal wear for a used battery; still good for daily use |
+| 70–79% | Noticeably shorter runtime; fine if you're usually near a plug |
+| Below 70% | Consider a replacement if you rely on battery life |
+
+Runtime also depends on the laptop itself — screen brightness, processor and what you're doing — so two laptops with the same health percentage can last different amounts of time.
+
+## Why this matters when buying refurbished
+
+Battery health is the component that varies most between refurbished laptops of the same model. A good listing should tell you the **measured** battery health, not just "battery working". Every laptop we sell has its battery health measured and recorded during our [quality testing](/how-we-refurbish), and the figure is shown on the product page.
+
+It's also worth checking the laptop yourself when it arrives, using the steps above. If something doesn't match the listing, our [warranty](/warranty) and [returns](/returns) policies explain what to do.
+
+## Keep your battery healthy for longer
+
+- **Avoid heat.** High temperatures age lithium-ion batteries fastest. Don't leave a laptop in a hot car or use it on a bed or pillow that blocks the vents.
+- **Don't keep it at 100% all the time.** If your laptop is always plugged in, use the charge-limit feature many manufacturers offer (for example in Lenovo Vantage, Dell's power settings or HP's BIOS battery options), or macOS's **Optimised Battery Charging**.
+- **Avoid regular deep discharges.** Running the battery to 0% often adds unnecessary wear.
+- **Use a good-quality charger** that matches your laptop's rated wattage.
+
+For more habits that keep a laptop running well, read our [laptop maintenance tips](/blog/laptop-maintenance-tips).

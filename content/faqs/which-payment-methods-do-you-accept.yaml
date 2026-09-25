@@ -1,0 +1,6 @@
+question: "Which payment methods do you accept?"
+answer: "You can pay securely online with UPI, credit and debit cards, net banking and popular wallets. Online payments are processed by Razorpay and every payment is verified on our servers before your order is confirmed. Cash on delivery may also be available for your order — if it is, you'll see it as an option at checkout."
+category: orders
+showOnHome: true
+showOnProduct: false
+sortOrder: 1

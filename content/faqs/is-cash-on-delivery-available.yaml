@@ -1,0 +1,6 @@
+question: "Is cash on delivery available?"
+answer: "Cash on delivery is offered for selected PIN codes and order values. If it's available for your order, it appears as a payment option at checkout along with any applicable COD fee."
+category: orders
+showOnHome: false
+showOnProduct: false
+sortOrder: 2

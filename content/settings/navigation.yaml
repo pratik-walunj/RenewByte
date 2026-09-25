@@ -1,0 +1,30 @@
+primary:
+  - label: Laptops
+    href: /laptops
+    highlight: false
+  - label: MacBooks
+    href: /category/macbooks
+    highlight: false
+  - label: Gaming
+    href: /category/gaming-laptops
+    highlight: false
+  - label: Business
+    href: /category/business-laptops
+    highlight: false
+  - label: Deals
+    href: /deals
+    highlight: true
+  - label: Sell / Trade-in
+    href: /sell
+    highlight: false
+secondary:
+  - label: How we refurbish
+    href: /how-we-refurbish
+  - label: About
+    href: /about
+  - label: Support
+    href: /contact
+  - label: Track order
+    href: /track-order
+  - label: Blog
+    href: /blog
