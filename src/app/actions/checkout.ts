@@ -12,7 +12,7 @@ import { computeTotals } from "@/server/pricing";
 import { getStoreSettings } from "@/server/settings";
 import { quoteShipping } from "@/server/shipping";
 import { OutOfStockError, releaseReservedStock } from "@/server/inventory";
-import { CheckoutError, createOrderFromCart, orderUrl } from "@/server/orders";
+import { CheckoutError, createOrderFromCart, orderUrl, sweepExpiredReservations } from "@/server/orders";
 import { createRazorpayOrder } from "@/server/payments/razorpay";
 import { getSiteSettings } from "@/lib/cms";
 
@@ -77,6 +77,8 @@ export async function placeOrder(input: CheckoutInput): Promise<PlaceOrderResult
 
   const user = await getCurrentUser();
   const cart = await getOrCreateCart();
+  // Free stock held by abandoned payments before checking availability.
+  await sweepExpiredReservations();
 
   let order;
   try {

@@ -209,7 +209,10 @@ Flow (never trusts the browser):
 3. Checkout.js collects payment. The browser posts `order_id`, `payment_id` and `signature` to `/api/payments/razorpay/verify`.
 4. The server verifies the HMAC signature, **fetches the payment from Razorpay** to confirm status and amount, then marks the order paid and commits stock. This step is idempotent.
 5. The webhook reconciles anything the browser missed (closed tab, network loss). Duplicate deliveries are ignored via `WebhookEvent`.
-6. `/api/cron/release-reservations` (Vercel Cron, see `vercel.json`) cancels unpaid orders older than 30 minutes and frees their stock. On Vercel Hobby, cron jobs run at most daily, so use Pro or an external scheduler that calls the endpoint with `Authorization: Bearer $CRON_SECRET`.
+6. Unpaid online orders older than 30 minutes are cancelled and their stock released at `/api/cron/release-reservations`. This works on the free Vercel Hobby plan:
+   - `vercel.json` schedules it **once a day**, which is the Hobby limit.
+   - Checkout and add-to-cart also run the cleanup automatically (at most every 5 minutes), so abandoned payments never block stock for long.
+   - Optional: `.github/workflows/release-reservations.yml` calls it every 15 minutes for free. Add the repository secrets `SITE_URL` and `CRON_SECRET`.
 
 **Cash on delivery** is available without Razorpay keys, toggled in Admin → Settings, with an optional fee and maximum order value. If Razorpay isn't configured, checkout falls back to COD automatically.
 

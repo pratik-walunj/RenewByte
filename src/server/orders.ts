@@ -395,6 +395,25 @@ export async function releaseExpiredReservations(minutes = 30) {
   return stale.length;
 }
 
+let lastSweep = 0;
+
+/**
+ * Opportunistic cleanup, so stock held by abandoned online payments is freed
+ * even without a frequent cron (Vercel Hobby only allows daily cron jobs).
+ * Runs at most once every 5 minutes per server instance; failures never
+ * affect the caller.
+ */
+export async function sweepExpiredReservations() {
+  const now = Date.now();
+  if (now - lastSweep < 5 * 60_000) return;
+  lastSweep = now;
+  try {
+    await releaseExpiredReservations(30);
+  } catch (err) {
+    console.error("[orders] reservation sweep failed", err);
+  }
+}
+
 // ─── Admin status updates ───────────────────────────────────
 
 const ALLOWED_TRANSITIONS: Record<OrderStatus, OrderStatus[]> = {

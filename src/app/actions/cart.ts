@@ -1,11 +1,13 @@
 "use server";
 
+import { after } from "next/server";
 import { z } from "zod";
 import { db } from "@/lib/db";
 import { limitByIp } from "@/lib/rate-limit";
 import type { CartView } from "@/lib/types";
 import { stockState } from "@/server/catalog";
 import { getCartView, getOrCreateCart, MAX_QTY_PER_LINE, reloadCartView } from "@/server/cart";
+import { sweepExpiredReservations } from "@/server/orders";
 
 type CartResult = { ok: true; cart: CartView; message?: string } | { ok: false; error: string; cart?: CartView };
 
@@ -22,6 +24,7 @@ export async function addToCart(productId: string, quantity = 1): Promise<CartRe
   });
   if (!parsed.success) return { ok: false, error: "Invalid request." };
   if (!(await limitByIp("cart", 60, 60_000)).ok) return { ok: false, error: "Too many requests. Please slow down." };
+  after(sweepExpiredReservations);
 
   const product = await db.product.findFirst({
     where: { id: productId, status: "PUBLISHED" },
