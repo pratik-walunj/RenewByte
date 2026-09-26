@@ -4,6 +4,8 @@ A production-ready e-commerce platform for selling professionally refurbished la
 
 > **Demo data:** `npm run db:seed` creates 24 sample laptops flagged `isDemo`. Their specs are realistic for each model, but prices, stock and battery figures are illustrative, and each one shows a "Demo listing" notice. The product images are neutral generated renders. Delete or replace the demo products before launch.
 
+> **Full documentation:** see [`docs/`](docs/README.md) — setup, architecture, database, CMS guide, admin guide, payments, deployment, SEO, security, reference and troubleshooting.
+
 ---
 
 ## Contents
