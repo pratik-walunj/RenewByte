@@ -32,7 +32,7 @@ The left menu of the CMS is grouped like this:
 
 | Item | Controls |
 | --- | --- |
-| **Site settings** | Business name, legal name, tagline, logo, **phone**, **WhatsApp number** (digits only, with 91, e.g. `918576000084`), default WhatsApp message, **email**, GSTIN, **address**, business hours, Google Maps embed link, social links, analytics IDs, default SEO title/description/share image |
+| **Site settings** | Business name, legal name, tagline, logo, **phone**, **WhatsApp number** (digits only, with 91, e.g. `918530117043`), default WhatsApp message, **email**, GSTIN, **address**, business hours, Google Maps embed link, social links, analytics IDs, default SEO title/description/share image |
 | **Announcement bar** | The thin dark bar at the very top — on/off and the messages (with optional links). On phones the first 3 rotate |
 | **Header navigation** | Main menu links (e.g. Laptops, MacBooks, Deals) and secondary links. Tick "Highlight" to show a link in red |
 | **Footer** | About text, the 4 link columns, payment note, bottom legal note |

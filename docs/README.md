@@ -29,7 +29,7 @@ RenewByte is an online store for professionally refurbished laptops in India. Th
 | Content editor (CMS) | `/keystatic` |
 | Production database | Neon PostgreSQL (Singapore region) |
 | Local database | Docker container on `localhost:5440` |
-| Business contact | +91 8576000084 (phone & WhatsApp), Pune, Maharashtra |
+| Business contact | +91 85301 17043 (phone & WhatsApp), Pune, Maharashtra |
 
 ## Before going live — checklist
 
